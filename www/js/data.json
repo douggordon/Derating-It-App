@@ -1,0 +1,20 @@
+
+{
+    "data":[
+    {"Category":"5e", "Type":"Horizontal", "Gauge":"24", "Derating":"1", "SpecialRule":""},
+    {"Category":"5e", "Type":"Patch", "Gauge":"24", "Derating":"1.2", "SpecialRule":""},
+    {"Category":"5e", "Type":"Patch", "Gauge":"28", "Derating":"1.9", "SpecialRule":""},
+    {"Category":"6", "Type":"Horizontal", "Gauge":"23", "Derating":"1", "SpecialRule":""},
+    {"Category":"6", "Type":"Horizontal", "Gauge":"28", "Derating":"1.9", "SpecialRule":"If you are using this with Cat 6 28AWG patch, the maximum channel length (horizontal + patch) is 50 meters"},
+    {"Category":"6", "Type":"Patch", "Gauge":"24", "Derating":"1.2", "SpecialRule":""},
+    {"Category":"6", "Type":"Patch", "Gauge":"28", "Derating":"1.9", "SpecialRule":"If you are using this with Cat 6 28AWG horizontal, the maximum channel length (horizontal + patch) is 50 meters"},
+    {"Category":"6A", "Type":"Horizontal", "Gauge":"23", "Derating":"1", "SpecialRule":""},
+    {"Category":"6A", "Type":"Horizontal", "Gauge":"26", "Derating":"1.45", "SpecialRule":""},
+    {"Category":"6A", "Type":"Patch", "Gauge":"24", "Derating":"1.2", "SpecialRule":""},
+    {"Category":"6A", "Type":"Patch", "Gauge":"26", "Derating":"1.5", "SpecialRule":"10m of 26AWG patch cable be used with 90m of 23AWG horizontal. De-rate normally for patch lengths > 10m"},
+    {"Category":"6A", "Type":"Patch", "Gauge":"28", "Derating":"1.9", "SpecialRule":"Maximum point-to-point length of 50 meters."},
+    {"Category":"7", "Type":"Horizontal", "Gauge":"23", "Derating":"1", "SpecialRule":""},
+    {"Category":"7", "Type":"Horizontal", "Gauge":"22", "Derating":"1", "SpecialRule":""},
+    {"Category":"7A", "Type":"Horizontal", "Gauge":"23", "Derating":"1", "SpecialRule":""},
+    {"Category":"7A", "Type":"Horizontal", "Gauge":"22", "Derating":"1", "SpecialRule":""}
+]}

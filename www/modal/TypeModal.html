@@ -1,0 +1,38 @@
+<html>
+<ion-modal-view style="height: 88%; width: 94%; top: 7%; left: 3%; right: 3%;">
+<div id="TypeModal.html" type="text/ng-template">
+    <ion-header-bar class="bar bar-header bar-positive">
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+      <h1 class="title">Type</h1>
+    </ion-header-bar>
+        <ion-content class="padding">
+<!--      <ion-list ng-repeat='item in uniqueCat'> -->
+      <div class="list">
+      	<ul>
+      		
+            <!-- <input type="radio" ng-model="uniqueCat" value="item"><li>{{item}}</li> -->
+            <div ng-repeat="item in uniqueType">
+        <input type="radio"
+          name="selected"
+          value="{{item.type}}" 
+          ng-model="radioEvents"
+          ng-change="categSelectionChanged(item)"
+          ng-click="modal.hide()">
+        </>{{item}}
+          
+        </div> 
+
+      
+
+   <!--  <H1>Radio Events:</H1>
+    <p ng-repeat="event in radioEvents">{{event}}</p> -->
+        </ul>
+      </div>
+      
+<!-- </ion-list> -->
+      <!-- <button class="button button-full button-positive" ng-click="modal.hide()">Done</button> -->
+    </ion-content>
+  </div>
+</div>
+</ion-modal-view>
+</html>

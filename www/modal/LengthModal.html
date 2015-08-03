@@ -1,0 +1,51 @@
+<html>
+<ion-modal-view style="height: 88%; width: 94%; top: 7%; left: 3%; right: 3%;">
+<div id="LengthModal.html" type="text/ng-template">
+    <ion-header-bar class="bar bar-header bar-positive">
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+      <h1 class="title">Length</h1>
+    </ion-header-bar>
+        <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">CALCULATOR</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div class='container'>
+          <div class="row view-space">
+          <p>{{viewSpace}}</p>
+          </div>
+
+          <div class="button-bar">
+            <button class='button button-outline buttonCalc' ng-click='set(7)'>7</button>
+            <button class='button button-outline buttonCalc' ng-click='set(8)'>8</button>
+            <button class='button button-outline buttonCalc' ng-click='set(9)'>9</button>
+
+          </div>
+          <div class="button-bar">
+            <button class='button button-outline buttonCalc' ng-click='set(4)'>4</button>
+            <button class='button button-outline buttonCalc' ng-click='set(5)'>5</button>
+            <button class='button button-outline buttonCalc' ng-click='set(6)'>6</button>
+  
+          </div>
+          <div class="button-bar">
+            <button class='button button-outline buttonCalc' ng-click='set(1)'>1</button>
+            <button class='button button-outline buttonCalc' ng-click='set(2)'>2</button>
+            <button class='button button-outline buttonCalc' ng-click='set(3)'>3</button>
+ 
+          </div>
+          <div class="button-bar">
+            <button class='button button-outline decimal buttonCalc' ng-click='set(".")'>.</button>
+            <button class='button button-outline buttonCalc' ng-click='set(0)'>0</button>
+            <button class='button button-outline button-assertive buttonCalc' ng-click='clear()'>Clear</button>
+   
+          </div>
+          <div class="button-bar">
+            <button class="button button-outline button-balanced buttonCalc" ng-click='execute(viewSpace)'>Enter</button>
+          </div>
+        </div>
+      </ion-content>
+      </ion-pane>
+  </div>
+</div>
+</ion-modal-view>
+</html>

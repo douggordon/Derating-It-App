@@ -1,0 +1,75 @@
+<ion-view>
+	<ion-content>
+				<div style="background-color:#747679; height:50px;">
+					<h4 style="color:white; line-height:50px; padding-left: 2%;">Length Available: <span style="float:right; padding-right:8%;">NA</span></h4>
+				</div>
+				<ion-list>
+					  <ion-item>
+					 	<div class="card" ng-controller='CategoryCtrl' ng-click="modal.show(uniqueCat)">
+						    <div class="leftList">Category</div>
+						    <div class="middleList">{{myCategory}}</div>
+						    <script>console.log(myCategory);</script>
+						    <div class="rightIcon"><i class="icon ion-chevron-right"></i></div>
+					  	</div>
+					  </ion-item>
+
+					  <ion-item>
+					 	<div class="card" ng-controller='TypeCtrl' ng-click="modal.show(uniqueType)">
+						    <div class="leftList">Cable Type</div>
+						    <div class="middleList">{{myType}}</div>
+						    <div class="rightIcon"><i class="icon ion-chevron-right"></i></div>
+					  	</div>
+					  </ion-item>
+
+					  <ion-item>
+					 	<div class="card" >
+						    
+						    <div ng-controller='TypeCtrl2'>
+						    <ion-toggle ng-repeat="item in typeList" ng-model="item.checked" ng-change=" updateRider(item);">{{ item.text }} <span style="padding-left:10%;">{{ item.id }}</span></ion-toggle>
+						    </div>
+					  	</div>
+					  </ion-item>
+
+					  <ion-item>
+					 	<div class="card" ng-controller='GaugeCtrl' ng-click="modal.show(uniqueGauge)">
+						    <div class="leftList">Wire Gauge</div>
+						    <div class="middleList">{{myGauge}}</div>
+						    <div class="rightIcon"><i class="icon ion-chevron-right"></i></div>
+					  	</div>
+					  </ion-item>
+
+					  <ion-item>
+					 	<div class="card"  ng-controller='LengthCtrl' ng-click="modal.show()">
+						    <div class="leftList">Length</div>
+						    <div class="middleList">{{viewSpace}}</div>
+						    <div class="rightIcon"><i class="icon ion-chevron-right"></i></div>
+					  	</div>
+					  </ion-item>
+				</ion-list>
+		</div>
+
+	</ion-content>
+</ion-view>
+
+
+
+
+<!--   <div class="modal" >
+    <ion-header-bar class="bar bar-header bar-positive">
+
+          
+      <h1 class="title">Somtheing</h1>
+
+    </ion-header-bar>
+    <ion-content>
+     <ion-list ng-repeat='item in uniqueNames'>
+      <div class="list">
+      	<ul>
+      		<li>{{item}}</li>
+        </ul>
+      </div>
+      
+</ion-list>
+      <button class="button button-full button-positive" ng-click="closeModal()">Done</button>
+    </ion-content>
+  </div> -->
